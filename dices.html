@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dices</title>
+    <link rel="stylesheet" href="dices.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Popup -->
+    <div class="popup-container hidden">
+      <div class="popup">
+        <h1></h1>
+        <p></p>
+        <button class="popup-button">Close</button>
+      </div>
+    </div>
+    <!-- Container -->
+    <header>
+      <h1>Dices</h1>
+      <a href="paper.html">Play Rock Paper Scissors</a>
+    </header>
+    <main>
+      <h1 class="information">
+        Let's play! Press the roll dices button to start. The first to reach a
+        score of 5 points wins!
+      </h1>
+      <div class="container">
+        <div class="dice-container">
+          <p>Your dice</p>
+          <!-- ONE -->
+          <div class="dice one-dot">
+            <!-- <span class="dot"></span> -->
+          </div>
+        </div>
+        <div class="dice-container">
+          <p>Computer's dice</p>
+          <!-- ONE -->
+          <div class="dice one-dot">
+            <!-- <span class="dot"></span> -->
+          </div>
+        </div>
+      </div>
+      <button id="playBtn">Roll dices</button>
+    </main>
+    <footer>
+      <p>If you enjoy this game, let's keep in touch!</p>
+      <a class="contact" target="_blank" href="contact.html">CONTACT ME! </a>
+    </footer>
+  </body>
+  <script src="dices.js"></script>
+</html>

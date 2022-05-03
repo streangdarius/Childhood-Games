@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Contact form validation" />
+    <title>Contact me</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact form</h1>
+      <div class="links">
+        <a href="paper.html">Play Rock Paper Scissors</a>
+        <a href="dices.html">Play Dices</a>
+      </div>
+    </header>
+    <div class="wrapper">
+      <h2>contact us</h2>
+
+      <div id="submit_message"></div>
+      <div id="alert_message"></div>
+
+      <form id="myForm" onsubmit="return validation">
+        <div class="input_field">
+          <input type="text" placeholder="Name" id="name" />
+        </div>
+
+        <div class="input_field">
+          <input type="text" placeholder="Surname" id="surname" />
+        </div>
+
+        <div class="input_field">
+          <input type="text" placeholder="Email" id="email" />
+        </div>
+
+        <div class="input_field_radio">
+          <p class="gender_text">Please select your gender:</p>
+
+          <input type="radio" name="gender" id="male" value="male" checked />
+          <label id="male" for="male">Male</label>
+
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+        </div>
+
+        <div class="input_field">
+          <textarea id="message" placeholder="Message"></textarea>
+        </div>
+
+        <button class="submit" id="submit" type="submit" value="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

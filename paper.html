@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="paper.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <a href="dices.html">Play Dices</a>
+    </header>
+    <!-- Score Board -->
+    <div class="score-board">
+      <div id="player-label" class="badge">Player</div>
+      <div id="computer-label" class="badge">Computer</div>
+      <span id="player-score">0</span>:<span id="computer-score">0</span>
+    </div>
+    <!-- Results -->
+    <div class="result">
+      <p>Choose from rock, paper or scissors.</p>
+    </div>
+    <!-- Choices -->
+    <div class="choices">
+      <div id="rock" class="choice">
+        <img src="images/rock_img.png" alt="Rock symbol" />
+      </div>
+      <div id="paper" class="choice">
+        <img src="images/paper_img.png" alt="Paper symbol" />
+      </div>
+      <div id="scissors" class="choice">
+        <img src="images/scissors_img.png" alt="Scissors symbol" />
+      </div>
+    </div>
+    <!-- Message -->
+    <p id="action-message">Make your move!</p>
+    <br />
+    <footer>
+      <p>If you enjoy this game, let's keep in touch!</p>
+      <a class="contact" target="_blank" href="contact.html">CONTACT ME! </a>
+    </footer>
+    <script src="paper.js"></script>
+  </body>
+</html>

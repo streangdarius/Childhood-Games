@@ -1,0 +1,189 @@
+/* Google font import */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+  font-size: 62.5%;
+}
+
+:root {
+  --white-color: #ffffff;
+  --background-color: #fec600;
+  --black-color: #332902;
+  --red-color: #ff0000;
+}
+
+body {
+  background-image: linear-gradient(to left, #fec000, #fed600);
+  height: 100vh;
+}
+
+header {
+  background: var(--white-color);
+  height: 4rem;
+  font-size: 1rem;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: var(--black-color);
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 2rem;
+}
+
+header a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--black-color);
+  transition: 0.3s ease-in-out;
+}
+
+header a:hover {
+  color: var(--red-color);
+}
+
+.score-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 5% auto;
+  padding: 1.5rem 2rem;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 20%;
+  box-shadow: -4px -4px rgba(254, 236, 164, 0.8);
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #332902;
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+}
+
+#player-score,
+#computer-score {
+  font-size: 5rem;
+}
+
+.badge {
+  background: var(--red-color);
+  color: var(--white-color);
+  padding: 0.2rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+}
+
+#player-label {
+  position: absolute;
+  top: 35%;
+  left: -50px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 35%;
+  right: -70px;
+}
+
+.result {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--black-color);
+  letter-spacing: 1px;
+}
+
+.result p {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Choices */
+.choices {
+  text-align: center;
+  margin: 5rem;
+}
+
+.choice {
+  display: inline-block;
+  border: 5px #fff solid;
+  border-radius: 100%;
+  margin: 1rem;
+  padding: 1.5rem;
+  transition: 0.15s ease-in-out;
+}
+
+.choice:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #fec000, 0 0 25px #fff, 0 0 5px #fec000;
+  border: 5px solid var(--black-color);
+}
+
+#action-message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #332902;
+  letter-spacing: 1px;
+}
+
+.win-select {
+  background-color: #4c4;
+  transition: 0.5s;
+}
+
+.lose-select {
+  background-color: red;
+  transition: 0.5s;
+}
+
+.tie-select {
+  background-color: #757575;
+  transition: 0.5s;
+}
+
+footer {
+  text-align: center;
+  margin: 5rem;
+  border-radius: 25px;
+}
+
+footer p {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.contact {
+  border: 5px solid var(--background-color);
+  padding: 1.5rem;
+  background: var(--white-color);
+  color: #332902;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  width: 40rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.contact:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #fed600, 0 0 25px #fff, 0 0 5px #fec000;
+}
